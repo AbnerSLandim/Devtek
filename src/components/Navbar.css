@@ -1,4 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#Navbar{
+    font-family: "Monstserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#logo{
+    height: 18vh;
+    display: flex;
+    align-items:center;
+    justify-content: start;
+}
+
+#logo img{
+    width: 125px;
+    height: 64.3px;
+}
+
+
 nav{
+    height: 18vh;
     background-color: rgba(45,45,44,255);
     
 }
+
+.opcaoNav{
+    color: white;
+    text-decoration: none;
+    padding-right: 5vh;
+}
+
+#navOpcao{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+/*Grid aqui*/
+#navGrid{
+    display: grid;
+    grid-template-areas: 
+    "Logo Opcoes";
+    height: 18vh;
+    margin-left: 25vh;
+    margin-right: 25vh;
+}
+
+#navLogo {grid-area: Logo;}
+#navOpcao {grid-area: Opcoes;}

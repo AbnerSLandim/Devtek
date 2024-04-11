@@ -1,4 +1,6 @@
 import './Navbar.css';
+import Logo from "../img/01-softtek-white.webp";
+
 import {
     BrowserRouter as Router,
     Routes,
@@ -11,14 +13,19 @@ function Navbar(){
         <div id="Navbar">
             <nav>
                 <Router>
-                    <ul>
-                        <li>
-                            <Link>Home</Link>
-                        </li>
-                    </ul>
-
+                    <div id='navGrid'>
+                        <div id='navLogo'>            
+                            <Link id='logo'><img src={Logo}/></Link>
+                        </div>
+                        <div id='navOpcao'>    
+                            <Link class="opcaoNav">HOME</Link>
+                            <Link class="opcaoNav">SOLUÇÃO DE PROBLEMAS</Link>
+                            <Link class="opcaoNav">SOBRE O PROJETO</Link>
+                            <Link class="opcaoNav">SUPORTE</Link>    
+                        </div>
+                    </div>
                     {/*Coloque os caminhos para as paginas aqui */ }
-                    <Routes>
+                <Routes>
 
                         <Route></Route>
 
