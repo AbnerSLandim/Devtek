@@ -1,0 +1,21 @@
+#gridSuporte{
+    display: grid;
+    grid-template-areas: 
+    "topbar topbar topbar"
+    "conteudo conteudo conteudo"
+    "footer footer footer";
+
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 18vh 70vh 12vh;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#headerSuporte{
+    width: 100%;
+}
+
+#headerSuporte{grid-area: topbar;}
+#mainSuporte{grid-area: conteudo;}
+#footerSuporte{grid-area: footer;}
